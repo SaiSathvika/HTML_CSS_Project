@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Corporate Website</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav .logo a {
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .hero {
+            background-color:blueviolet;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #007BFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        button:hover {
+            background-color:rgb(241, 238, 244);
+        }
+        .features {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgb(161, 73, 243);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px white;
+            transition: transform 0.3s ease;
+            color:white;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        h2{
+            color:blueviolet;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://1000logos.net/wp-content/uploads/2021/12/Accenture-logo.jpg" width="150px" height="150px" >
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Innovating for a Better Future</h1>
+        <p>Your partner in digital transformation.</p>
+        <button><a href="/learn.html">Learn More</a></button>
+    </div>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>TOGETHER WE REINVENTED</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Powering the future through reinvention</h3>
+                    <p>PPC makes the switch from commodity supplier to diversified digital powertech enterprise.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Accenture’s responsible AI blueprint</h3>
+                    <p>Accenture has operationalized ethical AI in our company. Now, our responsible AI program is also helping clients around the world use AI intelligently and responsibly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Grow your career at the heart of change</h3>
+                    <p>It's your time to shine. Bring your ingenuity, curiosity and big ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
